@@ -25,10 +25,12 @@ echo '<ol>
 <li> Variable de type string : ' . $str . '</li>
 <li> Variable de type int : ' . $int . '</li>
 <li> Variable de type float : ' . $float . '</li>
-<li> Variable de type boolean : ' . $bool . '</li>
+<li> Variable de type boolean : ' . ($bool===true ? 'true' : 'false') . '</li>
 </ol>';
 // Ex 05 
 $number = null;
+// Permet de voir le type et la valeur :
+var_dump($number); 
 echo '<p> variable null : ' . $number . '</p>';
 $number = 1000;
 echo '<p> variable anciennement null
@@ -42,6 +44,7 @@ $addition = 3+4;
 $multiplication = 5 * 20;
 $division = 45 / 5;
 // Avec double quotes, pas besoin de concaténer avec un point
+// mais php effectue une double lecture de la commande
 echo "Addition : $addition, Multiplication : $multiplication, Division : $division";
 ?>
 
